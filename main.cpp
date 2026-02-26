@@ -10,9 +10,6 @@ void prepare_images(const std::string &path1, const std::string &path2, cv::Mat 
     cv::Mat img1 = cv::imread(path1);
     cv::Mat img2 = cv::imread(path2);
 
-    std::cout << "img1 size: " << img1.size() << std::endl;
-    std::cout << "img2 size: " << img2.size() << std::endl;
-
     int max_width = 1000;
 
     if (img1.cols > max_width) {
